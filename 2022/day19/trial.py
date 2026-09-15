@@ -1,0 +1,1 @@
+print(list(open(0))[:3])

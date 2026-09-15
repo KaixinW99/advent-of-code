@@ -21,28 +21,27 @@ that they not be redistributed. Only my own solution code is here.
 ## Layout
 
 ```
-2025/
-  day01/
-    solution.py      # both parts; reads input.txt from the same folder
-    notes.md         # optional: the idea, and why the naive approach was too slow
-  day02/
-  ...
-2024/
-2023/
-2022/
+2025/  2024/  2023/  2022/
+  README.md        # index of the year: puzzle, approach notes, links to each file
+  NOTES.md         # (2025) short write-up of the idea behind each day
+  day01/ … day25/
+    *_1.py, *_2.py # part 1 and part 2; several days keep more than one approach
 tools/
-  make_readme.py     # regenerates the progress table above from stars.json
-stars.json           # star counts per event
+  make_readme.py   # regenerates the progress table above from stars.json
+stars.json         # star counts per event
 ```
+
+File names describe the technique used (`dijkstras_algorithm_2.py`, `shoelace_formula_picks_theorem.py`,
+`disjoint-set_union.py`, …), so the year indexes double as a map of which algorithm solved which puzzle.
 
 ## Running a solution
 
-Each day is self-contained and reads `input.txt` from its own folder. Put your own puzzle input
-there (it is gitignored), then:
+Puzzle inputs are not included — download your own from the puzzle page. Most solutions read standard input;
+the 2022 ones read `input.dat` from their own folder:
 
 ```bash
-cd 2024/day07
-python solution.py
+python 2024/day07/operation_combinatorics_1.py < my_input.txt
+cd "2022/day01" && python find_max_sum.py      # expects input.dat here
 ```
 
 ## Regenerating the progress table

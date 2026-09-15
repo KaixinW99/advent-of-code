@@ -4,6 +4,13 @@ inputs/
 *.input
 puzzle.md
 puzzle.txt
+input
+input_*
+in.txt
+*.dat
+test*.txt
+testcase*
+short_input*
 
 # Python
 __pycache__/
