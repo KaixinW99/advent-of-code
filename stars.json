@@ -1,0 +1,11 @@
+{
+  "_comment": "Edit this file after each event, then run `python tools/make_readme.py` to regenerate the table in README.md. `stars` is your star count; `available` is the maximum the event offered.",
+  "user": "KaixinW99",
+  "language": "Python",
+  "years": [
+    { "year": 2025, "stars": 24, "available": 24 },
+    { "year": 2024, "stars": 50, "available": 50 },
+    { "year": 2023, "stars": 50, "available": 50 },
+    { "year": 2022, "stars": 50, "available": 50 }
+  ]
+}
